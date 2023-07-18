@@ -1,0 +1,453 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right:0;
+    z-index:1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 12%;
+}
+.logo img{
+    max-width:100%;
+    width:115px;
+    height:auto;
+}
+.navmenu{
+    display:flex;
+}
+.navmenu li{
+    position: relative;
+}
+.navmenu a{
+    color:#212832;
+    font-size: 16px;
+    text-transform:capitalize;
+    font-weight: 500;
+    padding:15px 25px ;
+    transition: all .42s;
+}
+.navmenu a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #212832;
+    bottom: -2px;
+    left: 0;
+    transition: all .42s;
+}
+.navmenu a:hover::after{
+    width: 100%;
+}
+.btn-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-btn{
+    font-size: 17px;
+    color: #212832;
+    font-weight: 500;
+    border: 2px solid #212832;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: all .42s;
+}
+.nav-btn:hover{
+    background-color: #212832;
+    color:#fff;
+}
+#menu-icon{
+    font-size:35px;
+    color:#212832;
+    z-index:10001;
+    cursor: pointer;
+    display:none;
+}
+section{
+    padding:60px 12%;
+
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.pexels.com/photos/15031960/pexels-photo-15031960/free-photo-of-maldives-island-water-villa-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
+    gap: 10px;
+    grid-auto-rows: 100px;
+    align-items: center;
+    justify-items: center;
+   
+}
+.home-text{
+    position: relative;
+    width:100%;
+    height: 200px;
+    color:#212832;
+    padding: 10px;
+    
+    margin-left: 150%;
+    margin-top:30%;
+}
+.home-text h4{
+    color:#212832;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: normal;
+}
+.home-text h1{
+    color:#212832;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'volkhov';
+    line-height: 10px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: normal;
+}
+.home-text p{
+    color: rgb(82, 79, 79);
+    font-size:16px;
+}
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn1{
+    font-size:16px;
+    font-weight: 300;
+    font-style: normal;
+    color:#212832;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    background:rgb(197, 164, 184);
+    border: 2px solid #212832;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 40px;
+    transition: all .42s;
+}
+.btn1:hover{
+    transform: translateY(5px);
+}
+
+/* sticky design */
+header.sticky{
+    background-color: #fff1da;
+    padding: 22px 12%;
+    box-shadow: 0px 4px 15px rgb(0 0 0 / 8%);
+    transition: .43s;
+}
+/* category section */
+.center-text{
+    text-align: center;
+}
+.center-text h4{
+    font-size: 18px;
+    color: #565656;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+.center-text h2{
+    font-size: 50px;
+    color: #14183e;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'Volkhov';
+    margin-bottom: 90px;
+}
+.cate-pro{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 1rem;
+    text-align: center;
+}
+#img1{
+    float: left;
+    width: 100%;
+    padding: 5px;
+}
+.row{
+    padding:60px 40px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    transition: all .42s;
+}
+.row img{
+    width: 75px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.row h5{
+    font-size:16px;
+    color: #1E1D4C;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.row p{
+    color: #5E6282;
+    font-size: 14px;
+    font-weight: 500;
+}
+.row:hover{
+    transform: translateY(8px);
+}
+.container{
+    padding: 0 10%;
+}
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding-top: 22%;
+}
+.search-bar{
+    background: #fff1da;
+    width: 90%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+.search-bar form{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.search-bar form button{
+    background: #fff1da;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.search-bar form button{
+    width:15px;
+    margin-top: 7px;
+}
+.sub-title{
+    margin:50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+}
+.exclusives{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+.exclusives div img{
+    width: 100;
+    border-radius: 10px;
+}
+.exclusives div{
+    position: relative;
+}
+.exclusives div span{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #ffffff;
+}
+.list-container{
+    margin-top:50px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left-col{
+    flex-basis: 70%;
+}
+.right-col{
+    flex-basis: 25%;
+}
+.left-col h1{
+    color:#333;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.house{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+.house-img{
+    flex-basis: 40%;
+}
+.house-info{
+    flex-basis: 58%;
+    color: #555;
+}
+.house-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+.house-info h3{
+    font-weight: 600;
+    color: #333;
+    font-size: 22px;
+    margin: 4px 0;
+}
+.house-price{
+    text-align: right;
+}
+.house-price h4{
+    font-size: 20px;
+}
+.house-price h4 span{
+    font-size: 16px;
+    font-weight: 500;
+}
+.air-office{
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+.office-name{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 3rem;
+    align-items: center;
+}
+.office-name img{
+    max-width:100%;
+    width: 170px;
+    height: auto;
+    transition: all .42s;
+}
+.contact-info{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 2rem;
+    align-items: center;
+   
+}
+.first-info img{
+    max-width:100%;
+    width: 120px;
+    height: auto;
+}
+.first-info h6{
+    color: #5E6282;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+    cursor:pointer;
+    transition: all .42s;
+}
+.first-info h6:hover{
+    color: #f0b24d;
+}
+.contact-info h4{
+    font-size: 18px;
+    color: #080809;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.contact-info p{
+    color: #5E6282;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-bottom: 6px;
+    transition: all .42s;
+}
+.contact-info p:hover{
+    color:#f0b24d;
+}
+.fifth-info .icon a{
+    color: #000;
+    font-size:20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 15px rgb(0 0 0 /10%);
+    margin-right: 15px;
+    margin-bottom: 20px;
+    transition: all .42s;
+}
+/*loginpage*/
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+.login-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+.login-container  .input-group {
+    margin-bottom: 15px;
+  }
+  
+.login-container .label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 3px;
+  }
+  
+.login-container .btn {
+    padding: 8px 12px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+.login-container .btn:hover {
+    background-color: #efc786;
+}
